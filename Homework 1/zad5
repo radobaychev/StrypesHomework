@@ -1,5 +1,5 @@
-rado@rado-Swift-SF314-56:~/Desktop$ sort numbers | tail -1
+rado@rado-Swift-SF314-56:~/Desktop$ sort -n numbers | tail -1
 1.111
-rado@rado-Swift-SF314-56:~/Desktop$ sort numbers | head -1
+rado@rado-Swift-SF314-56:~/Desktop$ sort -n numbers | head -1
 1.1
 
