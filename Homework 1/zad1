@@ -1,0 +1,45 @@
+rado@rado-Swift-SF314-56:~/Documents$ mkdir day1
+rado@rado-Swift-SF314-56:~/Documents$ cd day1
+rado@rado-Swift-SF314-56:~/Documents/day1$ touch test{1..3}
+rado@rado-Swift-SF314-56:~/Documents/day1$ ls
+test1  test2  test3
+rado@rado-Swift-SF314-56:~/Documents/day1$ echo 'Hello Bash' > test1
+rado@rado-Swift-SF314-56:~/Documents/day1$ cat test1
+Hello Bash
+rado@rado-Swift-SF314-56:~/Documents/day1$ date > test2
+rado@rado-Swift-SF314-56:~/Documents/day1$ cat test2
+Tue Apr 23 01:07:17 PM EEST 2024
+rado@rado-Swift-SF314-56:~/Documents/day1$ pwd
+/home/rado/Documents/day1
+rado@rado-Swift-SF314-56:~/Documents/day1$ pwd > test3
+rado@rado-Swift-SF314-56:~/Documents/day1$ cat test3
+/home/rado/Documents/day1
+rado@rado-Swift-SF314-56:~/Documents/day1$ mkdir testDir
+rado@rado-Swift-SF314-56:~/Documents/day1$ cp test{1..3} testDir
+rado@rado-Swift-SF314-56:~/Documents/day1$ ls testDir
+test1  test2  test3
+rado@rado-Swift-SF314-56:~/Documents/day1$ cd testDir
+rado@rado-Swift-SF314-56:~/Documents/day1/testDir$ mkdir testNested
+rado@rado-Swift-SF314-56:~/Documents/day1/testDir$ cp test{1..2} testNested
+rado@rado-Swift-SF314-56:~/Documents/day1/testDir$ cd testNested
+rado@rado-Swift-SF314-56:~/Documents/day1/testDir/testNested$ ls
+test1  test2
+rado@rado-Swift-SF314-56:~/Documents/day1/testDir/testNested$ cd ..
+rado@rado-Swift-SF314-56:~/Documents/day1/testDir$ cd ..
+rado@rado-Swift-SF314-56:~/Documents/day1$ rm test{1..3}
+rado@rado-Swift-SF314-56:~/Documents/day1$ ls
+testDir
+rado@rado-Swift-SF314-56:~/Documents/day1$ cp -r testDir testDirCopy
+rado@rado-Swift-SF314-56:~/Documents/day1$ ls
+testDir  testDirCopy
+rado@rado-Swift-SF314-56:~/Documents/day1$ ls testDirCopy
+test1  test2  test3  testNested
+rado@rado-Swift-SF314-56:~/Documents/day1$ rm testDir/test1
+rado@rado-Swift-SF314-56:~/Documents/day1$ ls testDir
+test2  test3  testNested
+rado@rado-Swift-SF314-56:~/Documents/day1$ rm -r testDirCopy
+rado@rado-Swift-SF314-56:~/Documents/day1$ ls
+testDir
+
+
+
