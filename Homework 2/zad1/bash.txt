@@ -1,0 +1,30 @@
+rado@MSI:~/Desktop/homework 2/zad1$ g++ -E program.cpp -o program.i
+rado@MSI:~/Desktop/homework 2/zad1$ g++ -E swap.cpp -o swap.i 
+rado@MSI:~/Desktop/homework 2/zad1$ g++ -S program.i -o program.s
+rado@MSI:~/Desktop/homework 2/zad1$ g++ -S swap.i -o swap.s
+rado@MSI:~/Desktop/homework 2/zad1$ g++ -c program.s -o program.o
+rado@MSI:~/Desktop/homework 2/zad1$ g++ -c swap.s -o swap.o
+rado@MSI:~/Desktop/homework 2/zad1$ g++ program.o swap.o -o program
+rado@MSI:~/Desktop/homework 2/zad1$ ./program
+Enter first number: 2
+Enter second number: 4
+Before swap:  Num1 = 2, Num2 = 4
+After swap:  Num1 = 4, Num2 = 2
+
+
+
+rado@MSI:~/Desktop/homework 2/zad1$ make
+g++ -E program.cpp -o program.i
+g++ -S program.i -o program.s
+g++ -c program.s -o program.o
+g++ -E swap.cpp -o swap.i 
+g++ -S swap.i -o swap.s
+g++ -c swap.s -o swap.o
+g++ program.o swap.o -o program
+rado@MSI:~/Desktop/homework 2/zad1$ ./program
+Enter first number: 2
+Enter second number: 4
+Before swap:  Num1 = 2, Num2 = 4
+After swap:  Num1 = 4, Num2 = 2
+rado@MSI:~/Desktop$ make clean
+rm -f *.o program

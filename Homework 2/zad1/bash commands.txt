@@ -1,0 +1,16 @@
+rado@MSI:~/Desktop$ g++ -c program.cpp -o program.o
+rado@MSI:~/Desktop$ g++ -c swap.cpp -o swap.o
+rado@MSI:~/Desktop$ g++ program.o swap.o -o program
+
+
+rado@MSI:~/Desktop$ make
+g++ -c program.cpp -o program.o
+g++ -c swap.cpp -o swap.o
+g++ program.o swap.o -o program
+rado@MSI:~/Desktop$ ./program
+Enter first number: 5
+Enter second number: 2
+Before swap:  Num1 = 5, Num2 = 2
+After swap:  Num1 = 2, Num2 = 5
+rado@MSI:~/Desktop$ make clean
+rm -f *.o program
